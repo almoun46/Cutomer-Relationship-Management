@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CRMGA</class>
+ <widget class="QMainWindow" name="CRMGA">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1310</width>
+    <height>553</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>CRMGA</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QTextEdit" name="CentreText">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>30</y>
+      <width>1041</width>
+      <height>281</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textInteraction">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>350</y>
+      <width>571</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QTextEdit" name="textTodo">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>350</y>
+      <width>451</width>
+      <height>161</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>10</y>
+      <width>381</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tableau d'affichage des informations de tous les contacts</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>330</y>
+      <width>401</width>
+      <height>19</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Affichage  des interactions</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>590</x>
+      <y>320</y>
+      <width>221</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Tâches à effectuer</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>30</y>
+      <width>211</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Liste Contacts</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>100</y>
+      <width>211</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Json Contact</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>160</y>
+      <width>211</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Liste interactions</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>220</y>
+      <width>211</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Json Interaction</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>290</y>
+      <width>211</width>
+      <height>27</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Liste Tâches</string>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="contact">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1310</width>
+     <height>26</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuCONTACT">
+    <property name="title">
+     <string>CONTACT</string>
+    </property>
+    <addaction name="actionCreerContact"/>
+    <addaction name="actionModifier"/>
+    <addaction name="actionSupprimer"/>
+    <addaction name="actionRechercher"/>
+    <addaction name="actionRechercher_par_nom"/>
+    <addaction name="actionRechercher_par_entreprise"/>
+   </widget>
+   <widget class="QMenu" name="menuINTERACTION">
+    <property name="title">
+     <string>INTE&amp;RACTION</string>
+    </property>
+    <addaction name="actionAjouter"/>
+    <addaction name="actionAfficher_liste"/>
+   </widget>
+   <widget class="QMenu" name="menuREQUETES">
+    <property name="title">
+     <string>RE&amp;QUETES</string>
+    </property>
+    <addaction name="actionInteraction_entre_deux_dates"/>
+    <addaction name="actionInteraction_d_un_contact_entre_deux_dates"/>
+    <addaction name="actionTous_les_Taches"/>
+    <addaction name="actionTous_les_taches_d_un_contact_entre_deux_dates"/>
+   </widget>
+   <widget class="QMenu" name="menuAPROPOS">
+    <property name="title">
+     <string>APROPOS</string>
+    </property>
+    <addaction name="action_Apropos"/>
+   </widget>
+   <addaction name="menuCONTACT"/>
+   <addaction name="menuINTERACTION"/>
+   <addaction name="menuREQUETES"/>
+   <addaction name="menuAPROPOS"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="actionCreerContact">
+   <property name="text">
+    <string>&amp;Nouveau</string>
+   </property>
+  </action>
+  <action name="actionModifier">
+   <property name="text">
+    <string>&amp;Modifier</string>
+   </property>
+  </action>
+  <action name="actionSupprimer">
+   <property name="text">
+    <string>&amp;Supprimer</string>
+   </property>
+  </action>
+  <action name="actionRechercher">
+   <property name="text">
+    <string>&amp;Rechercher par date</string>
+   </property>
+  </action>
+  <action name="actionAjouter">
+   <property name="text">
+    <string>&amp;Ajouter</string>
+   </property>
+  </action>
+  <action name="actionAfficher_liste">
+   <property name="text">
+    <string>Afficher &amp;liste</string>
+   </property>
+  </action>
+  <action name="actionInteraction_entre_deux_dates">
+   <property name="text">
+    <string>&amp;Interaction entre deux dates</string>
+   </property>
+  </action>
+  <action name="actionInteraction_d_un_contact_entre_deux_dates">
+   <property name="text">
+    <string>Interaction &amp;d'un contact entre deux dates</string>
+   </property>
+  </action>
+  <action name="actionTous_les_Taches">
+   <property name="text">
+    <string>&amp;Tous les Taches</string>
+   </property>
+  </action>
+  <action name="actionTous_les_taches_d_un_contact_entre_deux_dates">
+   <property name="text">
+    <string>Tous &amp;les taches d'un contact entre deux dates</string>
+   </property>
+  </action>
+  <action name="action_Apropos">
+   <property name="text">
+    <string>&amp;Apropos</string>
+   </property>
+  </action>
+  <action name="actionRechercher_par_nom">
+   <property name="text">
+    <string>Rechercher par nom</string>
+   </property>
+  </action>
+  <action name="actionRechercher_par_entreprise">
+   <property name="text">
+    <string>Rechercher par entreprise</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
